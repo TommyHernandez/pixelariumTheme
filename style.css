@@ -1,0 +1,265 @@
+/*
+Theme Name: ThemePixel
+Theme URI: http://pixelariumstudio.es/theme
+Author: Pedro Hernandez <PixelariumStudio>
+Author URI: http://pthernandez.es/
+Description: Tema personalizado basado en Bootstrap para Wordpress y a medida par nuestro Blog, PixelariumStudio
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: themepixel
+This theme, like WordPress, is licensed under the GPL.
+
+*/
+@import url('bootstrap/css/bootstrap.css');
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 0px;
+    color: #5a5a5a;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+
+.carousel {
+    height: 100%;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+    height: 100%;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%; 
+    /*object-fit: cover;*/
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0;
+    /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+/* === Estilos Propios DEL TEMA ===
+-------------------------------------------------- */
+/* ==  Tipografias ==  */
+@font-face {
+    font-family: 'exolight';
+    src: url('fuentes/Exo-Light-webfont.eot');
+    src: url('fuentes/Exo-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/Exo-Light-webfont.woff2') format('woff2'),
+         url('fuentes/Exo-Light-webfont.woff') format('woff'),
+         url('fuentes/Exo-Light-webfont.ttf') format('truetype'),
+         url('fuentes/Exo-Light-webfont.svg#exolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exobold';
+    src: url('fuentes/Exo-Bold-webfont.eot');
+    src: url('fuentes/Exo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/Exo-Bold-webfont.woff2') format('woff2'),
+         url('fuentes/Exo-Bold-webfont.woff') format('woff'),
+         url('fuentes/Exo-Bold-webfont.ttf') format('truetype'),
+         url('fuentes/Exo-Bold-webfont.svg#exobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exothinitalic';
+    src: url('fuentes/Exo-ThinItalic-webfont.eot');
+    src: url('fuentes/Exo-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/Exo-ThinItalic-webfont.woff2') format('woff2'),
+         url('fuentes/Exo-ThinItalic-webfont.woff') format('woff'),
+         url('fuentes/Exo-ThinItalic-webfont.ttf') format('truetype'),
+         url('fuentes/Exo-ThinItalic-webfont.svg#exothinitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*================================================*/
+body{
+    font-family: 'exolight';
+    background-color: #efefef;
+   
+}
+.titulo{
+    font-family: 'exobold';
+    color: #0D47A1;
+}
+.titulo a {
+    color: #212121;
+}
+a{
+    color: #D81B60;
+}
+blockquote {
+  font-family: 'exothinitalic';  
+}
+.footer-cita{
+    background-color: #BDBDBD;
+    border: 0px;
+}
+.comments{
+    margin-top: 15px;
+    margin-bottom:0px;
+    background-color: #BDBDBD;
+}
+h2.featurette-heading a {
+    text-decoration: none;
+}
+.piefoto p {
+    font-size: 0.7em;
+    color: #2d4469;
+}
+.bg {
+    width: 100%;
+    background-image: url(images/404.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 100%;
+}
+footer {
+    margin-top: 10px;
+    background-color: #222;
+    border-color: #080808;
+}
+.nav-color {
+    background-color: #1976D2;
+    color: #FFF;
+    border-color: #000;
+}
+.nav-color a {
+    color: #FFF;
+}
+.nav-color a:hover {
+    color: #000;
+}
+
+footer {
+    margin-top: 10px;
+    padding-top: 15px;
+    background-color: #1976D2;
+    border-color: #EEE;
+    color: #FFF;
+}
+.post-par {
+    -webkit-box-shadow: 11px 13px 22px 0px rgba(207, 195, 207, 1);
+    -moz-box-shadow: 11px 13px 22px 0px rgba(207, 195, 207, 1);
+    box-shadow: 11px 13px 22px 0px rgba(207, 195, 207, 1);
+}
+.cuadrada{
+    width: 140px; 
+    height: 140px;
+}
+footer{
+    border: 1px #000 solid;
+}
+.centrar{
+    text-align: center;
+}
+.centrar h2 {
+    font-family: 'exobold';
+}
+.colum-content{
+    text-align: justify;
+}
+footer a{
+    color: #8BC34A;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        /*margin-top: 120px;*/
+    }
+}
